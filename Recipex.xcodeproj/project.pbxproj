@@ -15,6 +15,7 @@
 		9825FCD52980378600527073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9825FCD42980378600527073 /* Assets.xcassets */; };
 		9825FCD82980378600527073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9825FCD62980378600527073 /* LaunchScreen.storyboard */; };
 		9825FCE12980402500527073 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9825FCE02980402500527073 /* Alamofire */; };
+		9825FCE4298052F000527073 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825FCE3298052F000527073 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9825FCD42980378600527073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9825FCD72980378600527073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9825FCD92980378600527073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9825FCE3298052F000527073 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		D2AC4EF067D8A32562DF7156 /* Pods_Recipex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,12 +78,21 @@
 				9825FCCB2980378500527073 /* AppDelegate.swift */,
 				9825FCCD2980378500527073 /* SceneDelegate.swift */,
 				9825FCCF2980378500527073 /* ViewController.swift */,
+				9825FCE2298052BF00527073 /* Networking */,
 				9825FCD12980378500527073 /* Main.storyboard */,
-				9825FCD42980378600527073 /* Assets.xcassets */,
 				9825FCD62980378600527073 /* LaunchScreen.storyboard */,
+				9825FCD42980378600527073 /* Assets.xcassets */,
 				9825FCD92980378600527073 /* Info.plist */,
 			);
 			path = Recipex;
+			sourceTree = "<group>";
+		};
+		9825FCE2298052BF00527073 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9825FCE3298052F000527073 /* ApiClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		DDCD641EAD3640BDCD940778 /* Pods */ = {
@@ -199,6 +210,7 @@
 				9825FCD02980378500527073 /* ViewController.swift in Sources */,
 				9825FCCC2980378500527073 /* AppDelegate.swift in Sources */,
 				9825FCCE2980378500527073 /* SceneDelegate.swift in Sources */,
+				9825FCE4298052F000527073 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
