@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030CBE5F909FEAD9759F2683 /* Pods_Recipex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AC4EF067D8A32562DF7156 /* Pods_Recipex.framework */; };
 		9825FCCC2980378500527073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825FCCB2980378500527073 /* AppDelegate.swift */; };
 		9825FCCE2980378500527073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825FCCD2980378500527073 /* SceneDelegate.swift */; };
 		9825FCD02980378500527073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825FCCF2980378500527073 /* ViewController.swift */; };
@@ -30,7 +29,6 @@
 		9825FCD72980378600527073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9825FCD92980378600527073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9825FCE3298052F000527073 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		D2AC4EF067D8A32562DF7156 /* Pods_Recipex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030CBE5F909FEAD9759F2683 /* Pods_Recipex.framework in Frameworks */,
 				9825FCE12980402500527073 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +46,6 @@
 		2837A7A0151F7447471379BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D2AC4EF067D8A32562DF7156 /* Pods_Recipex.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
