@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030CBE5F909FEAD9759F2683 /* Pods_Recipex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AC4EF067D8A32562DF7156 /* Pods_Recipex.framework */; };
 		9825FCCC2980378500527073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825FCCB2980378500527073 /* AppDelegate.swift */; };
 		9825FCCE2980378500527073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825FCCD2980378500527073 /* SceneDelegate.swift */; };
 		9825FCD02980378500527073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825FCCF2980378500527073 /* ViewController.swift */; };
 		9825FCD32980378500527073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9825FCD12980378500527073 /* Main.storyboard */; };
 		9825FCD52980378600527073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9825FCD42980378600527073 /* Assets.xcassets */; };
 		9825FCD82980378600527073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9825FCD62980378600527073 /* LaunchScreen.storyboard */; };
+		9825FCE12980402500527073 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9825FCE02980402500527073 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FBFBE302642084456461DAF /* Pods-Recipex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipex.release.xcconfig"; path = "Target Support Files/Pods-Recipex/Pods-Recipex.release.xcconfig"; sourceTree = "<group>"; };
+		460CE36F5C969D79825D6A16 /* Pods-Recipex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipex.debug.xcconfig"; path = "Target Support Files/Pods-Recipex/Pods-Recipex.debug.xcconfig"; sourceTree = "<group>"; };
 		9825FCC82980378500527073 /* Recipex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9825FCCB2980378500527073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9825FCCD2980378500527073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,7 @@
 		9825FCD42980378600527073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9825FCD72980378600527073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9825FCD92980378600527073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2AC4EF067D8A32562DF7156 /* Pods_Recipex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030CBE5F909FEAD9759F2683 /* Pods_Recipex.framework in Frameworks */,
+				9825FCE12980402500527073 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2837A7A0151F7447471379BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2AC4EF067D8A32562DF7156 /* Pods_Recipex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9825FCBF2980378500527073 = {
 			isa = PBXGroup;
 			children = (
 				9825FCCA2980378500527073 /* Recipex */,
 				9825FCC92980378500527073 /* Products */,
+				DDCD641EAD3640BDCD940778 /* Pods */,
+				2837A7A0151F7447471379BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,15 @@
 			path = Recipex;
 			sourceTree = "<group>";
 		};
+		DDCD641EAD3640BDCD940778 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				460CE36F5C969D79825D6A16 /* Pods-Recipex.debug.xcconfig */,
+				3FBFBE302642084456461DAF /* Pods-Recipex.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +100,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9825FCDC2980378600527073 /* Build configuration list for PBXNativeTarget "Recipex" */;
 			buildPhases = (
+				C94975AED109C62D33DCBAF1 /* [CP] Check Pods Manifest.lock */,
 				9825FCC42980378500527073 /* Sources */,
 				9825FCC52980378500527073 /* Frameworks */,
 				9825FCC62980378500527073 /* Resources */,
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = Recipex;
+			packageProductDependencies = (
+				9825FCE02980402500527073 /* Alamofire */,
+			);
 			productName = Recipex;
 			productReference = 9825FCC82980378500527073 /* Recipex.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 9825FCBF2980378500527073;
+			packageReferences = (
+				9825FCDF2980402500527073 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9825FCC92980378500527073 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +165,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C94975AED109C62D33DCBAF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Recipex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9825FCC42980378500527073 /* Sources */ = {
@@ -282,6 +340,7 @@
 		};
 		9825FCDD2980378600527073 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460CE36F5C969D79825D6A16 /* Pods-Recipex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +369,7 @@
 		};
 		9825FCDE2980378600527073 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FBFBE302642084456461DAF /* Pods-Recipex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9825FCDF2980402500527073 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9825FCE02980402500527073 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9825FCDF2980402500527073 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9825FCC02980378500527073 /* Project object */;
 }
