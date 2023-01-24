@@ -8,10 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var drinks = Drinks()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        drinks.getData{
+            print("\(self.drinks.drinkArray)worked")
+            }
+        
     }
 
 
